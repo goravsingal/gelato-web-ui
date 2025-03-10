@@ -4,13 +4,10 @@ import { BrowserProvider, ethers, JsonRpcSigner } from "ethers";
 import { Eip1193Provider } from "ethers";
 import { burnToken, fetchBalance, fetchRelatedTransactions, fetchTransactions } from "@/service/api/api_client";
 
-import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import moment from "moment";
 import { Transaction } from "@/service/interfaces/transaction";
 import Transactions from "./components/transactions";
 import BurnTokens from "./components/burn_tokens";
