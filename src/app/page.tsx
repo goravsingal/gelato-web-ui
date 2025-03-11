@@ -100,7 +100,7 @@ export default function Home() {
       setWallet({ provider, signer, address });
       console.log("🔗 Connected Wallet:", address);
     } catch (error) {
-      console.error("❌ Error connecting wallet:", error);
+      console.error("Error connecting wallet:", error);
     }
   }
 
@@ -113,9 +113,9 @@ export default function Home() {
       const address = await signer.getAddress();
 
       setWallet({ provider, signer, address });
-      console.log("🔄 Reconnected Wallet:", address);
+      console.log("Reconnected Wallet:", address);
     } catch (error) {
-      console.error("❌ Error reconnecting wallet:", error);
+      console.error("Error reconnecting wallet:", error);
     }
   }
 
@@ -131,7 +131,7 @@ export default function Home() {
     }
 
     if (!window.ethereum) {
-        console.log("❌ No window.ethereum detected! Ensure Metamask is installed.");
+        console.log("No window.ethereum detected! Ensure Metamask is installed.");
         return;
     }
 
@@ -219,7 +219,7 @@ export default function Home() {
         />
       )}
 
-      {/* ✅ Burn Tokens Form */}
+      {/* Burn Tokens Form */}
       {wallet && (
         <BurnTokens 
           amount={amount}
